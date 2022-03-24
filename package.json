@@ -1,0 +1,46 @@
+{
+  "name": "analytics-dashboard-gywyjn",
+  "version": "1.0.0",
+  "description": "Account Analytics",
+  "main": "index.tsx",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "start": "webpack serve --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://meez-jttrhx@git.codesubmit.io/meez/analytics-dashboard-gywyjn"
+  },
+  "keywords": [
+    "analytics",
+    "dashboard",
+    "react",
+    "typescript"
+  ],
+  "author": "Fred Rodolfo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.42",
+    "@types/react-dom": "^17.0.14",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "raf": "^3.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "whatwg-fetch": "^3.6.2"
+  }
+}
