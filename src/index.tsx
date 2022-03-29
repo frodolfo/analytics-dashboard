@@ -9,7 +9,9 @@ import ReactDOM from 'react-dom'
 
 import './index.css'
 
+import Dashboard from "./pages/Dashboard";
+
 ReactDOM.render(
-    <h1>Hello, Meez.</h1>,
+    <Dashboard />,
     document.getElementById('app-root'),
 )
