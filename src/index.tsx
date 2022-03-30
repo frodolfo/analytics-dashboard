@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom'
 
 import './index.css'
 
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard"
 
 ReactDOM.render(
     <Dashboard />,

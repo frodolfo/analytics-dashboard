@@ -2,14 +2,14 @@
   "name": "analytics-dashboard-gywyjn",
   "version": "1.0.0",
   "description": "Account Analytics",
-  "main": "index.tsx",
+  "main": "webpack.config.js",
   "engines": {
     "npm": "please-use-yarn",
     "yarn": ">= 1.19.1"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack",
-    "start": "webpack serve --port 3000",
+    "build": "webpack --config webpack.config.js --env env=production",
+    "start": "webpack serve --config webpack.config.js --env env=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

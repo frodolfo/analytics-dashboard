@@ -1,8 +1,14 @@
-import React from "react";
+import React from "react"
+import "./TableView.css"
+
+type metricType = {
+  title: number,
+  value: string | Date | number | any
+}
 
 const TableView = (props: any) => {
-  const DATA = props.data || [];
-  const METRICS = props.metrics || [];
+  const DATA = props.data || []
+  const METRICS = props.metrics || []
 
   return (
     <table>
@@ -13,8 +19,8 @@ const TableView = (props: any) => {
         </tr>
       </thead>
       <tbody>
-        {React.Children.toArray(METRICS).map((metric: any) => (
-          <tr>
+        {METRICS.map((metric: metricType, index: number) => (
+          <tr key={index}>
             <td>{metric.title}</td>
             <td>{metric.value(DATA)}</td>
           </tr>
@@ -24,4 +30,4 @@ const TableView = (props: any) => {
   );
 };
 
-export default TableView;
+export default TableView
