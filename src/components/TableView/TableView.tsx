@@ -36,7 +36,7 @@ const TableView = (props: any) => {
   };
 
   return (
-    <Table>
+    <Table id="recipeMetrics">
       <TableHead>
         <TableRow>
           <TableCell>
