@@ -1,5 +1,5 @@
 type MetricType = {
-  title: number;
+  title: string;
   value: string | Date | number | any;
 };
 

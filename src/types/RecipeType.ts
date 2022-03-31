@@ -1,4 +1,4 @@
-type RecipeItem = {
+type RecipeType = {
   recipe_id: number;
   created: string;
   modified: string;
@@ -7,4 +7,4 @@ type RecipeItem = {
   total_recipe_views: number;
 };
 
-export default RecipeItem;
+export default RecipeType;

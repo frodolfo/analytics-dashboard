@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Paper from "@mui/material/Paper";
+import { Paper, Typography } from "@mui/material";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 import { TableView, Filter } from "../components/";
 
 import RecipeType from "../types/RecipeType";
@@ -45,7 +50,9 @@ const Dashboard = () => {
   return (
     <RecipesContext.Provider value={recipeItems}>
       <Paper className="container">
-        <h1>Recipe Analytics Dashboard</h1>
+        <Typography variant="h3" gutterBottom component="div" px={2}>
+          Account Analytics Dashboard
+        </Typography>
         <Filter data={recipeCreators} callback={filterRecipeDataByCreator} />
         <TableView metrics={Metrics} />
       </Paper>

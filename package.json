@@ -39,6 +39,7 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@fontsource/roboto": "^4.5.5",
     "@mui/material": "^5.5.3",
     "core-js": "^3.21.1",
     "raf": "^3.4.1",
