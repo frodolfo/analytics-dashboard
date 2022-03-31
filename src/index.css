@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-  display: flexbox;
-  flex-direction: row;
-  padding: 40px;
-  margin: 40px auto;
-  width: fit-content;
+  overflow-x: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 10px;
+  margin: 10px;
 }

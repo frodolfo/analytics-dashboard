@@ -1,11 +1,4 @@
-type RecipeItem = {
-  recipe_id: number;
-  created: Date;
-  modified: Date;
-  name: string;
-  created_by: string;
-  total_recipe_views: number;
-};
+import RecipeItem from "../types/RecipeType";
 
 const METRICS = [
   {
@@ -23,18 +16,14 @@ const METRICS = [
       return numOfCreators.size;
     },
   },
-  // {
-  //   title: "First recipe create date",
-  //   value: (dataArray: RecipeItem[]): Date =>
-  //     dataArray.map<Date>(data: RecipeItem => dataArray.created).slice().sort((a: Date, b: Date) => b - a)
-
-  //     // dataArray.map(data: RecipeItem => dataArray.created).sort((a: Date, b: Date) => b - a)
-  //     //   .slice()
-  //     //   .sort(
-  //     //     (a: RecipeItem, b: RecipeItem) =>
-  //     //       b.created - a.created
-  //     //   )[0].created,
-  // },
+  {
+    title: "First recipe create date",
+    value: (dataArray: RecipeItem[]): string =>
+      dataArray.sort(
+        (prev: RecipeItem, curr: RecipeItem): number =>
+          Date.parse(prev.created) - Date.parse(curr.created)
+      )[0].created,
+  },
   {
     title: "Total number of recipe views",
     value: (dataArray: RecipeItem[]): number =>
