@@ -2,7 +2,7 @@ import React from "react";
 import { cleanup, render, screen } from "@testing-library/react";
 
 // pages and components
-import Dashboard from "../pages/Dashboard";
+import Dashboard from "../../pages/Dashboard";
 
 describe("Dashboard page", () => {
   it("should have the page title 'Account Analytics Dashboard'", () => {
