@@ -29,10 +29,6 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: "images",
       },
-      {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-        type: "asset/inline",
-      },
     ],
   },
   devtool: prod ? undefined : "source-map",

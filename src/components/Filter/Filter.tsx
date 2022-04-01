@@ -8,8 +8,6 @@ import {
   Select,
 } from "@mui/material";
 
-import "./Filter.css";
-
 const Filter = (props: any) => {
   const [recipeCreator, setRecipeCreator] = useState("");
   const DATA: string[] = props.data || [];
