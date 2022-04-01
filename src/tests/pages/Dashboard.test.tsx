@@ -20,7 +20,7 @@ describe("Dashboard page", () => {
       render(<Dashboard />);
     });
 
-    expect(screen.findByTestId("creatorSelect")).toBeInTheDocument();
+    expect(screen.getByTestId("creator-select")).toBeInTheDocument();
   });
 
   it("should have a table showing different metrics'", () => {
@@ -28,7 +28,7 @@ describe("Dashboard page", () => {
       render(<Dashboard />);
     });
 
-    expect(screen.findByTestId("recipeMetrics")).toBeInTheDocument();
+    expect(screen.getByTestId("recipe-metrics")).toBeInTheDocument();
   });
 
   afterAll(cleanup);

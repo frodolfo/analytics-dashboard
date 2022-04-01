@@ -30,15 +30,15 @@ const TableView = (props: any) => {
             <TableCell>{metric.value(recipeData)}</TableCell>
           </TableRow>
         ))
-      : [0, 1, 2, 3, 4, 5].map((num: number, index: number) => (
-          <TableRow key={index.toString()}>
+      : [0, 1, 2, 3, 4, 5].map((num: number) => (
+          <TableRow key={num.toString()}>
             <TableCell>Loading...</TableCell>
             <TableCell>Loading...</TableCell>
           </TableRow>
         ));
 
   return (
-    <Table id="recipeMetrics">
+    <Table id="recipeMetrics" data-testid="recipe-metrics">
       <TableHead>
         <TableRow>
           <TableCell>
